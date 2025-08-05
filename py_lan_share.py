@@ -46,6 +46,7 @@ def device_discovery(mode:int, allow_blacklist = True, time_sleep = 2):
     return data
 
 
+
 def request_transfer(data,time_sleep=2):
     with open(pipe_fname, "w") as f:
         json.dump(data,f)
